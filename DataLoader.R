@@ -11,4 +11,3 @@ transactions <- mutate(transactions, corporate = str_detect(transactions$product
 tmp <- filter(transactions, !(startup | corporate))
 tmpStartup <- filter(transactions, startup)
 tmpCorporate <- filter(transactions,corporate)
-
